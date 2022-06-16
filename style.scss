@@ -60,6 +60,11 @@ body {
 	.nav--list--btn {
 		display: none;
 	}
+
+	.nav--list--item:hover {
+		cursor: pointer;
+		opacity: 0.7;
+	}
 }
 
 .hero {
@@ -83,6 +88,11 @@ body {
 			border-radius: 40px;
 			border: var(--bright-red);
 			font-weight: 700;
+		}
+
+		.main--heading--btn:hover {
+			opacity: 0.7;
+			cursor: pointer;
 		}
 
 		.main--subheading {
@@ -171,6 +181,7 @@ body {
 
 .testimonials {
 	text-align: center;
+	margin-bottom: 10rem;
 
 	.testimonial--heading {
 		color: var(--dark-blue);
@@ -229,6 +240,11 @@ body {
 	font-weight: 700;
 }
 
+.testimonials--btn:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
 .cta {
 	text-align: center;
 	min-height: 20rem;
@@ -252,6 +268,11 @@ body {
 		border-radius: 40px;
 		border: var(--vary-light-gray);
 		font-weight: 700;
+	}
+
+	.cta--btn:hover {
+		opacity: 0.9;
+		cursor: pointer;
 	}
 }
 
@@ -309,6 +330,11 @@ body {
 			border-color: var(--bright-red);
 			font-weight: 700;
 		}
+
+		.footer--input--btn:hover {
+			opacity: 0.9;
+			cursor: pointer;
+		}
 	}
 
 	.footer--nav--ul {
@@ -322,6 +348,11 @@ body {
 
 		.footer--nav--item {
 			margin: 1rem 0;
+		}
+
+		.footer--nav--item:hover {
+			color: var(--bright-red);
+			cursor: pointer;
 		}
 
 		.left {
@@ -439,6 +470,10 @@ body {
 		border-radius: 40px;
 		border: var(--bright-red);
 		font-weight: 700;
+	}
+	.nav--ul .nav--list--btn:hover {
+		opacity: 0.9;
+		cursor: pointer;
 	}
 
 	.hero .title .main--heading--btn {

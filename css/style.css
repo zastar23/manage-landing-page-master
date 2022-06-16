@@ -58,6 +58,10 @@ body {
 .nav--ul .nav--list--btn {
   display: none;
 }
+.nav--ul .nav--list--item:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 
 .hero {
   display: flex;
@@ -80,6 +84,10 @@ body {
   border-radius: 40px;
   border: var(--bright-red);
   font-weight: 700;
+}
+.hero .title .main--heading--btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 .hero .title .main--subheading {
   color: var(--dark-grayish-blue);
@@ -159,6 +167,7 @@ body {
 
 .testimonials {
   text-align: center;
+  margin-bottom: 10rem;
 }
 .testimonials .testimonial--heading {
   color: var(--dark-blue);
@@ -212,6 +221,11 @@ body {
   font-weight: 700;
 }
 
+.testimonials--btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 .cta {
   text-align: center;
   min-height: 20rem;
@@ -234,6 +248,10 @@ body {
   border-radius: 40px;
   border: var(--vary-light-gray);
   font-weight: 700;
+}
+.cta .cta--btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .dots__dot {
@@ -286,6 +304,10 @@ body {
   border-color: var(--bright-red);
   font-weight: 700;
 }
+.footer .input .footer--input--btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
 .footer .footer--nav--ul {
   display: flex;
   flex-direction: row;
@@ -297,6 +319,10 @@ body {
 }
 .footer .footer--nav--ul .footer--nav--item {
   margin: 1rem 0;
+}
+.footer .footer--nav--ul .footer--nav--item:hover {
+  color: var(--bright-red);
+  cursor: pointer;
 }
 .footer .footer--nav--ul .left {
   text-align: left;
@@ -395,6 +421,10 @@ body {
     border-radius: 40px;
     border: var(--bright-red);
     font-weight: 700;
+  }
+  .nav--ul .nav--list--btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
   }
   .hero .title .main--heading--btn {
     width: 10rem;
