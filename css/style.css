@@ -1,3 +1,51 @@
+.icon-1,
+.icon-2,
+.icon-3 {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  width: 1.5rem;
+  height: 3px;
+  background-color: black;
+  transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
+}
+
+.icon-1 {
+  transform: translateY(-8px);
+  animation-delay: 100ms;
+}
+
+.icon-3 {
+  transform: translateY(8px);
+  animation-delay: 250ms;
+}
+
+.hamburger-icon {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.hamburger-icon:hover {
+  transform: scale(1.2);
+}
+
+.icon-1.a {
+  transform: rotate(40deg);
+}
+
+.icon-3.b {
+  transform: rotate(-40deg);
+}
+
+.icon-2.c {
+  opacity: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -53,7 +101,7 @@ body {
   background-color: var(--vary-light-gray);
   padding: 1rem 0;
   border-radius: 10px;
-  visibility: hidden;
+  z-index: 10;
 }
 .nav--ul .nav--list--btn {
   display: none;
@@ -61,6 +109,18 @@ body {
 .nav--ul .nav--list--item:hover {
   cursor: pointer;
   opacity: 0.7;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.dark {
+  filter: brightness(50%);
+}
+
+.drop-shadow {
+  filter: drop-shadow(0 0 10rem var(--dark-blue));
 }
 
 .hero {
@@ -362,7 +422,7 @@ body {
     padding: 0;
     cursor: pointer;
   }
-  .hamburger {
+  .hamburger-icon {
     display: none;
   }
   .diagrams {

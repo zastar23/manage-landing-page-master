@@ -1,8 +1,29 @@
 "use strict";
+// Mobile toggle nav
+const toggleNav = function () {
+	const icon1 = document.getElementById("a");
+	const icon2 = document.getElementById("b");
+	const icon3 = document.getElementById("c");
 
+	const nav = document.querySelector(".nav--ul");
+	const hamburger = document.querySelector(".hamburger-icon");
+	const hero = document.querySelector(".hero");
+
+	hamburger.addEventListener("click", () => {
+		icon1.classList.toggle("a");
+		icon2.classList.toggle("c");
+		icon3.classList.toggle("b");
+		nav.classList.toggle("hidden");
+		nav.classList.toggle("drop-shadow");
+		hero.classList.toggle("dark");
+	});
+};
+
+toggleNav();
+
+// SLIDER
 const slider = function () {
 	const slides = document.querySelectorAll(".testimonial--card");
-	console.log(slides);
 	const dotsContainer = document.querySelector(".dots");
 	let curSlide = 0;
 	const maxSlide = slides.length - 1;

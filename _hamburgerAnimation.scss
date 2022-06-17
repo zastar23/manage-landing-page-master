@@ -1,0 +1,47 @@
+.icon-1,
+.icon-2,
+.icon-3 {
+	position: absolute;
+	right: 1rem;
+	top: 1.5rem;
+	width: 1.5rem;
+	height: 3px;
+	background-color: black;
+	transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
+}
+
+.icon-1 {
+	transform: translateY(-8px);
+	animation-delay: 100ms;
+}
+
+.icon-3 {
+	transform: translateY(8px);
+	animation-delay: 250ms;
+}
+
+.hamburger-icon {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	cursor: pointer;
+
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+.icon-1.a {
+	transform: rotate(40deg);
+}
+.icon-3.b {
+	transform: rotate(-40deg);
+}
+.icon-2.c {
+	opacity: 0;
+}
